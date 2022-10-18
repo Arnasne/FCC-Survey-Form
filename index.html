@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Style Sheets -->
+	<link rel="stylesheet" href="styles.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+	
+	<title>Registration form</title>
+</head>
+
+<body>
+
+	<main role="main" class="container">
+
+		<img class="bg-image" src="https://images.pexels.com/photos/185348/pexels-photo-185348.jpeg?cs=srgb&dl=pexels-pineapple-supply-co-185348.jpg&fm=jpg" alt="image of table">
+
+		<div class="form-wraper">
+			
+			<h1 id="title">FreeCodeCamp Survey Form</h1>
+			<p id="description">Thank you for your time</p>
+
+			<form id="survey-form">
+
+				<!-- Personal info -->
+				<fieldset class="info-fieldset">
+					<label id="name-label" class="personal-info-labels">Name*</label>
+					<input 
+						class="info-input"
+						id="name"
+						name="name" 
+						type="text" 
+						required 
+						placeholder="First name"
+					/>
+					<label id="number-label" class="personal-info-labels">Age*</label>
+					<input 
+						class="info-input"
+						id="number" 
+						name="number" 
+						type="number" 
+						min="10" 
+						max="120" 
+						placeholder="Your age"
+					/>
+					<label id="email-label" class="personal-info-labels">Email*</label>
+					<input
+						class="info-input" 
+						id="email" 
+						name="email" 
+						type="email" 
+						required 
+						placeholder="Email address"
+					/>
+				</fieldset>
+
+				<hr>
+
+				<fieldset>
+
+					<!-- Dropdown menu -->
+					<p>Which programming languages you like the most?</p>
+					<select id="dropdown">
+						<option>JavaScript</option>
+						<option>Python</option>
+						<option>C++</option>
+						<option>Java</option>
+						<option>PHP</option>
+					</select>
+				</fieldset>
+
+				<hr>
+
+				<!-- Radio section -->
+				<fieldset class="radio-container">
+
+					<p>Coding on laptop or desktop?</p>
+
+					<label class="form-control">
+						<input type="radio" id="laptop" name="radio" value="laptop" />
+						Laptop
+					</label>
+
+					<label class="form-control">
+						<input type="radio" id="desktop" name="radio" value="desktop" />
+						Desktop
+					</label>
+
+					<label class="form-control">
+						<input type="radio" id="both" name="radio" value="both" />
+						Both
+					</label>
+
+				</fieldset>
+
+				<hr>
+
+				<!-- Checkbox section -->
+				<fieldset>	
+
+					<p>Which stack you choose?</p>
+
+					<label label class="form-control">
+						<input type="checkbox" id="fron" name="fron" value="che-fe" />
+						Front-end
+					</label>
+
+					<label label class="form-control">
+						<input type="checkbox" id="back" name="back" value="che-be" />
+						Back-end
+					</label>
+
+					<label label class="form-control">
+						<input type="checkbox" id="full" name="full" value="che-fs" />
+						Full-stack
+					</label>
+					
+				</fieldset>
+
+				<hr>
+
+				<!-- End section -->
+				<fieldset class="txt-area-submit-container">
+
+					<p class="p-comment-below">You can leave a comment below</p>
+
+					<textarea 
+						name="txt-area" 
+						id="txt-area" 
+						cols="40" 
+						rows="7">
+					</textarea>
+
+					<input 
+						type="submit" 
+						id="submit" 
+						name="submit" 
+						placeholder="Type some text..."
+					/>
+
+				</fieldset>
+
+			</form>
+
+		</div>
+
+	</main>
+</body>
+
+</html>
