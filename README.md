@@ -1,3 +1,3 @@
-FreeCodeCamp project - Survey form
+This is a responsive Survey Form built with HTML and CSS as part of the FreeCodeCamp Responsive Web Design Certification.
 
-See this project live at:  https://arnasne.github.io/FCC-Survey-Form/
+👉 Live preview: https://arnasne.github.io/FCC-Survey-Form/
